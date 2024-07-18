@@ -202,3 +202,70 @@ Finalmente, que todos estos cambios entren en vigor de inmediato.
 <img src="img/10.PNG">
 </div>
 
+### Creación de usuario y base de datos
+Se procede a crear la Base de datos que se usara:
+
+> CREATE DATABASE IF NOT EXISTS `db_glpi`;
+
+Se necesita crear un usuario para la base el cual se usará para que GLPI pueda conectarse:
+
+> CREATE USER 'glpi'@'%' IDENTIFIED BY ' TuClaveAqui ';
+
+Se otorga al usuario el permiso mínimo para conectarse y establece una contraseña:
+
+> GRANT USAGE ON *.* TO 'glpi'@'%' IDENTIFIED BY 'TuClaveAqui';
+
+Se otorga al usuario todos los privilegios a todas las tablas.
+
+>GRANT ALL PRIVILEGES ON *.* TO 'glpi'@'%';
+
+Se procede a recargar los privilegios dados anteriormente:
+
+> FLUSH PRIVILEGES;
+
+### Juego de caracteres por defecto de MariaDB
+
+El juego de caracteres por defecto al instalar MariaDB se configura como latin1, cuando lo correcto para idioma español sería al menos utf8 o, mejor aún, utf8mb4. Para modificar esto editamos el archivo de configuración de 
+MariaDB:
+
+> sudo vi /etc/my.cnf.d/server.cnf
+
+Y en la sección mysqld añadimos estas dos líneas:
+> ...
+<br>[mysqld]
+<br>...
+<br>character_set_server=utf8mb4
+<br>collation_server=utf8mb4_unicode_ci
+<br>...
+
+Guardamos los cambios y reiniciamos el servicio:
+
+> sudo systemctl restart mariadb
+
+## Descargar GLPI
+
+🚨 N O T A: para este proceso estaremos en el servidor 1 (APP)
+
+Para esta instalación se procederá con la versión 10.0.5, por lo que nos vamos al repositorio:
+
+> https://github.com/glpi-project/glpi/releases
+
+Y elegimos la versión deseada.
+
+En el servidor procedemos con la descarga del archivo
+
+> wget https://github.com/glpi-project/glpi/releases/download/10.0.5/glpi-10.0.5.tgz
+
+Una vez descargado procedemos con descomprimirlo y nos extraerá la carpeta ‘glpi’ y habrá que mover a la ruta “/var/www/html/”
+
+> tar -zxvf glpi-10.0.5.tgz -C /var/www/html/
+
+Otorgamos permisos para apache sobre la ruta anterior y modificamos sus permisos
+
+> chown -R apache. /var/www/html/
+
+> chmod -R 755 /var/www/html/glpi/
+
+Ahora ya se podría proceder con la instalación grafica de GLPI, por lo que nos podemos dirigir a la siguiente ruta ( Donde la IP_SERVER es la ip donde está instalado).
+
+> http://IP_SERVER/glpi/install/install.php
