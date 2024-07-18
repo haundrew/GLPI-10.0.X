@@ -29,11 +29,23 @@ GLPI es una aplicación de código abierto que se utiliza para gestionar activos
 
 🚨 NOTA: La versión de PHP debe ser instalada dentro del rango 7.4.0 a 8.2.0, si la versión supera o es baja a este rango, GLPI no funcionará
 
-# Proceso de Intslación GLPI
+# Proceso de Instlación GLPI
 
 ## Servidor 1 (APP)
 ### Instalación de Apache
  Para proceder con la instalación se actualice el httpd índice del paquete Apache local para reflejar los últimos cambios ascendentes:
 
 > sudo yum update httpd
+
+Una vez actualizado el paquete se procede con la instalación:
+
+> sudo yum install httpd
+
+Apache no se inicia automáticamente en CentOS una vez que se completa la instalación. Deberá iniciar el proceso de Apache manualmente
+
+> sudo systemctl start httpd
+
+Se verifica es estatus con:
+
+> sudo systemctl status httpd
 
