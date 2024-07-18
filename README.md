@@ -23,7 +23,9 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 ## Temario 📃
 
 ### Instalación de GLPI 10.0.X
-### Estructuración del GLPI a nivel Desarrollador  
+### Estructuración del GLPI a nivel Desarrollador 
+- Estructura de GLPI
+- Base de Datos
 ### Administración GLPI
 - Usuarios
 - Perfiles
@@ -35,8 +37,23 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 ### Plugins
 - Additional fields
 - Behaviours
-### Instalación de agentes
+### Instalación de agentes en:
+- CentOS 7
+- Rocky Linux
+- Windows XP
+- Windows Server 2008
+- Windows Server 2012
+- Windows Server 2016
+- Windows Server 2019
+- Windows 10
+- Windows 11
+- RedHat 9.3
+- SUSE
+- CentOS Stream 8
+- RedHat 7.5
+- Oracle Linux 8.8
 ### Vinculación de Ticket's <> Computadoras <> Documentos
+### Actualización de GLPI
 
 
 
