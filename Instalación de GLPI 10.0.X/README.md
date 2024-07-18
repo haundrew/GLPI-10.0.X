@@ -101,3 +101,45 @@ Ahora ya que se cuenta con los requisitos básicos se puede proceder con la inst
 
 ## Servidor 2 (Base de Datos)
 ### Instalación de MariaDB
+Debemos tener en cuenta que la versión presente en los repositorios es la última versión.
+
+Para instalarla bastará con usar el gestor de paquetes yum para instalar los paquetes necesarios, por lo que la primera acción será actualizar el sistema:
+
+>sudo yum update
+
+Ya podemos instalar el paquete mariadb-server, cuyas dependencias instalarán también el cliente de consola mysql:
+
+>sudo yum install -y mariadb-server
+
+El gestor yum agregara el cliente de forma automática la dependencia faltante si lo instala por medio de RPM hay que instalar los 2
+
+<div align="center">
+<img src="img/3.PNG">
+</div>
+
+Sin embargo, se puede instalar cualquier otra versión, solo hay que añadir un nuevo repositorio para yum. Como ejemplo instalaremos MariaDB 10.0, seguiremos los siguientes pasos:
+
+- Accedemos al archivo mariadb.repo:
+
+> sudo vi /etc/yum.repos.d/MariaDB.repo
+
+El contenido de este archivo será el siguiente:
+
+>[mariadb]
+<br>name = MariaDB
+<br>baseurl = http://yum.mariadb.org/10.5/centos7-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1
+
+Guardamos los cambios y actualizamos las listas de paquetes:
+
+> sudo yum clean all
+
+Se finaliza con el:
+
+>sudo yum install -y MariaDB-server
+
+🚨 NOTA: la versión de maríaDB varía dependiendo la versión de GLPI, lo recomendable es instalar las versiones estables sugeridas.
+
+### Configuración de arranque del servicio automático e iniciar la Dase de Datos
+
