@@ -41,6 +41,7 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 - Usuarios
 - Perfiles
 - Grupos
+- Activos
 - Categorias
 - Notificaciones
 - Documentos
