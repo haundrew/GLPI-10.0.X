@@ -1,10 +1,11 @@
-# <img src="https://play-lh.googleusercontent.com/NAKibQ0iva_Zh4vB9-JbFcZOu_4NW-SsvNZeQFcOhiw3vBYYpkl_t88u8WASzkDR_Q" width="50"> GLPI-10.0.X
+# <img src="https://play-lh.googleusercontent.com/NAKibQ0iva_Zh4vB9-JbFcZOu_4NW-SsvNZeQFcOhiw3vBYYpkl_t88u8WASzkDR_Q" width="50"> GLPI-10.0.X 🤓
 Encontraras manuales de Intalación, Administración, Desarrollo y Vinculación de agentes en diferentes sistemas operativos.
 
 <div id="header" align="center">
 <img src="https://inforges.es/wp-content/uploads/2022/08/glpi.webp" width="500">
 </div>
 
+## ¿Que necesitas?
 Para poder entender y seguir los manuales necesitaras tener conocimientos basicos en:
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
@@ -19,5 +20,21 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 ![Red Hat](https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
-## Aqui encontraras todos los conocimientos que he adquirido con el timepo y me compartir lo voy aprendiendo :D
+## Temario
 
+### Instalación de GLPI 10.0.X
+### Administración GLPI
+- Usuarios
+- Perfiles
+- Grupos
+- Categorias
+- Notificaciones
+- Documentos
+- Reportes
+### Plugins
+### Instalación de agentes
+### Vinculación de Ticket's <> Computadoras <> Documentos
+
+
+
+## 🚨🚨🚨 NOTA: Perdonen si la información es muy ambigua, algo desordenada o si faltan temas por tocar, aqui por el momento encontraras todos los conocimientos que he adquirido con el tiempo ya que me gusta compartir lo voy aprendiendo :D
