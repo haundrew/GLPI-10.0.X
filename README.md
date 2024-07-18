@@ -1,4 +1,4 @@
-# GLPI-10.0.X <img src="https://play-lh.googleusercontent.com/NAKibQ0iva_Zh4vB9-JbFcZOu_4NW-SsvNZeQFcOhiw3vBYYpkl_t88u8WASzkDR_Q" width="100">
+# <img src="https://play-lh.googleusercontent.com/NAKibQ0iva_Zh4vB9-JbFcZOu_4NW-SsvNZeQFcOhiw3vBYYpkl_t88u8WASzkDR_Q" width="50"> GLPI-10.0.X
 Encontraras manuales de Intalación, Administración, Desarrollo y Vinculación de agentes en diferentes sistemas operativos.
 
 <div id="header" align="center">
