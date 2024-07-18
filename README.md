@@ -52,6 +52,7 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 - CentOS Stream 8
 - RedHat 7.5
 - Oracle Linux 8.8
+- Ubuntu 16.04
 ### Vinculación de Ticket's <> Computadoras <> Documentos
 ### Actualización de GLPI
 
