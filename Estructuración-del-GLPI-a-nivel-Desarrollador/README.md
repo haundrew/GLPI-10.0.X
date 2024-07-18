@@ -1,2 +1,2 @@
-# GLPI-10.0.X
-Encontraras manuelaes de Intalación, Administracióm, Desarrollo y vonculación de agentes en diferentes sistemas operativos.
+# Estructuración de GLPI a nivel desarrollador 👨‍💻
+En este apartado se explicará como esta estructurado GLPI a nivel consola, donde puedes encontrar los archivos de las paginas 
