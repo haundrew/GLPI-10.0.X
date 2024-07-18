@@ -20,9 +20,10 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 ![Red Hat](https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
-## Temario
+## Temario 📃
 
 ### Instalación de GLPI 10.0.X
+### Estructuración del GLPI a nivel Desarrollador  
 ### Administración GLPI
 - Usuarios
 - Perfiles
@@ -32,6 +33,8 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 - Documentos
 - Reportes
 ### Plugins
+- Additional fields
+- Behaviours
 ### Instalación de agentes
 ### Vinculación de Ticket's <> Computadoras <> Documentos
 
