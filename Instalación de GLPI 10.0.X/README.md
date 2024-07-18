@@ -143,3 +143,62 @@ Se finaliza con el:
 
 ### Configuración de arranque del servicio automático e iniciar la Dase de Datos
 
+Sea cual sea la versión de MariaDB Server que instales en CentOS 7, al final del proceso se creará un nuevo servicio en el sistema, mariadb.service o simplemente mariadb.
+
+Si queremos que el servicio MariaDB arranque en cada inicio del sistema, lo tendremos que habilitar con el comando systemctl:
+
+> sudo systemctl enable mariadb
+
+Se arrancar el servicio:
+
+> sudo systemctl start mariadb
+
+Ahora verificamos el estatus del proceso:
+
+> systemctl status mariadb
+
+<div align="center">
+<img src="img/4.PNG">
+</div>
+
+### Configuración inicial de la base de datos
+
+Antes de empezar a trabajar con el servicio de base de datos conviene ejecutar el script mysql_secure_installation que se encargará de dejar nuestra instalación más segura que con la configuración que viene por 
+defecto:
+
+> sudo mysql_secure_installation
+
+<div align="center">
+<img src="img/5.PNG">
+</div>
+
+Presionamos “enter” y nos preguntara si deseamos ingresar un pass (Si la contraseña de root está en blanco nos da la oportunidad de establecerla).
+
+<div align="center">
+<img src="img/6.PNG">
+</div>
+
+Una vez ingresado el nuevo pass nos pregunta si quitamos los usuarios anónimos
+
+<div align="center">
+<img src="img/7.PNG">
+</div>
+
+Configurar el acceso de root como exclusivamente local, impidiendo que se conecte remotamente (también muy importante, para evitar ataques).
+
+<div align="center">
+<img src="img/8.PNG">
+</div>
+
+Eliminar la base de datos ‘test‘, que está pensada para hacer pruebas.
+
+<div align="center">
+<img src="img/9.PNG">
+</div>
+
+Finalmente, que todos estos cambios entren en vigor de inmediato.
+
+<div align="center">
+<img src="img/10.PNG">
+</div>
+
