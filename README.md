@@ -7,6 +7,7 @@ Toda la información que se encontrará aqui es para las versiones de GLPI 10.0.
 🚨🚨R E C O M E N D A C I O N E S🚨🚨
 </div>
 
+
 🚨 Si es tu primera vez en glpi o estas aprendiendo, te aconsejo que sigas el orden del temario, para que puedas entender glpi en su totalidad... o al menos en sus aspectos basicos.
 
 🚨 Todos los manuales son unicamente exclusivos de la misma repo, si tu deseas descargar la información no te sera de utilidad ya que la información esta programda de manera que solo puedas visualizarla por medio de GitHub en los README de cada carpeta, es decir cada tema esta desglosado o divido por carpetas con los manuales por medio del README para su visualizacion.
