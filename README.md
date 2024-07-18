@@ -37,7 +37,7 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 ### Plugins
 - Additional fields
 - Behaviours
-### Instalación de agentes en:
+### Instalación de agentes por PERL en:
 - CentOS 7
 - Rocky Linux
 - Windows XP
@@ -53,6 +53,11 @@ Para poder entender y seguir los manuales necesitaras tener conocimientos basico
 - RedHat 7.5
 - Oracle Linux 8.8
 - Ubuntu 16.04
+### Instalación de agentes por SNAP en:
+- CentOS 8 Stream
+- RedHat 8
+- Ubuntu 14.04
+- Ubuntu 18
 ### Vinculación de Ticket's <> Computadoras <> Documentos
 ### Actualización de GLPI
 
