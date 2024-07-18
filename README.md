@@ -1,6 +1,8 @@
 # <img src="https://play-lh.googleusercontent.com/NAKibQ0iva_Zh4vB9-JbFcZOu_4NW-SsvNZeQFcOhiw3vBYYpkl_t88u8WASzkDR_Q" width="50"> GLPI-10.0.X 🤓
 Encontraras manuales de Intalación, Administración, Desarrollo y Vinculación de agentes en diferentes sistemas operativos.
 
+Toda la información que se encontrará aqui es para las versiones de GLPI 10.0.1 a superiores (10.0.X), es decir que desde la instalación del software hasta la administración e instalación de los agentes en compatible y funcionalcon estas versiones de GLPI.
+
 <div id="header" align="center">
 <img src="https://inforges.es/wp-content/uploads/2022/08/glpi.webp" width="500">
 </div>
