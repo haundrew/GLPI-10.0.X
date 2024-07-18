@@ -269,3 +269,101 @@ Otorgamos permisos para apache sobre la ruta anterior y modificamos sus permisos
 Ahora ya se podría proceder con la instalación grafica de GLPI, por lo que nos podemos dirigir a la siguiente ruta ( Donde la IP_SERVER es la ip donde está instalado).
 
 > http://IP_SERVER/glpi/install/install.php
+
+## Instalación de GLPI
+
+En seguimiento con el tema de la instalación de GlPI nos dirigimos al navegador (se recomienda utilizar Fire Fox u Opera como navegadores en GLPI) guiándonos con la siguiente sintaxis:
+
+
+< http://direcciónipdeservidorapp/glpi/install/install.php
+
+
+En este caso práctico accedemos a:
+
+> http://10.100.10.223/glpi/install/install.php
+
+Mostrará el menú de instalación por partes, la primera parte de la instalación se hace la selección de idioma para GLPI, en este caso se selecciona “español (América Latina)” en otros casos puede aparecer como “español (México)”.
+
+<div align="center">
+<img src="img/11.PNG">
+</div>
+
+La siguiente parte de la instalación mostrará dos opciones “Instalar” y “Actualizar”, en este caso se dará la opción de “instalar”.
+
+<div align="center">
+<img src="img/12.PNG">
+</div>
+
+La tercera parte de la instalación arrojará un menú de verificación de compatibilidad con respecto al entorno del GLPI. En esta parte será común tener los siguientes errores:
+
+<div align="center">
+<img src="img/13.PNG">
+</div>
+
+
+<div align="center">
+<img src="img/14.PNG">
+</div>
+
+Estos errores son por el tema de permisos con respecto a carpetas dentro del sistema de GLPI que Linux bloquea automáticamente por temas de seguridad de la misma.
+
+para poder otorgar permisos a las carpetas mencionadas se ejecuta el siguiente comando:
+
+> sudo setsebool -P httpd_unified 1
+
+Se ejecutarán los siguientes comandos para los demás errores o alertamientos señalados en el menú de verificación:
+
+> yum install php-mysql
+
+> yum install php-xml
+
+> yum install php-curl
+
+> yum install php-gd
+
+> yum install php-intl
+
+Aplicamos un reinicio de httpd para aplicar cambios
+
+> sudo systemctl restart httpd
+
+Por el momento se han solucionado los errores los cuales son requisito indispensable para proceder con la instalación, por lo que se puede instalar, para esto le damos clic en “Reintentar”.
+
+<div align="center">
+<img src="img/15.PNG">
+</div>
+
+Los Alertamientos y errores se habrán resuelto y marcado con palomita verde, esto dando a entender que están correctos.
+
+Continuaremos con la conexión al servidor de la base de datos que en este caso seria la 10.100.10.224 ingresando los accesos que anteriormente se generaron.
+
+<div align="center">
+<img src="img/16.PNG">
+</div>
+
+Se selecciona la base de datos a la cual se va a conectar la aplicación de GLPI, en este caso seleccionamos “glip_cmdb” y damos en continuar.
+
+<div align="center">
+<img src="img/17.PNG">
+</div>
+
+Esperamos a que cargue y conecte la aplicación con la base de datos y nos arrojara el siguiente mensaje:
+
+<div align="center">
+<img src="img/18.PNG">
+</div>
+
+Apartir de aqui se le estara dando siguignete  a todas las ventanas que salgan de la instalación hasta que lleguemos a esta ultima:
+
+<div align="center">
+<img src="img/19.PNG">
+</div>
+
+
+Le damos clic en “utilizar glpi” y tendremos ya la app funcionando correctamente.
+
+<div align="center">
+<img src="img/20.PNG">
+</div>
+
+### Con esto finalizariamos la instalación de glpi 10.0.X :D
