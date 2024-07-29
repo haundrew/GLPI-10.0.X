@@ -31,7 +31,7 @@ En esta parte de la introducción compartire que programas seraá necesarios ins
 
 <div align="center">
 <img src="https://miro.medium.com/max/1400/1*69ktAAlWQSJL2F-Yi8l4aQ.png" width="500">
-<div>
+</div>
 
 ### Enlace de descarga:
 > https://dbeaver.io/download/
