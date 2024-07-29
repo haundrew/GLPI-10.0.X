@@ -21,3 +21,7 @@ En esta parte de la introducción compartire que programas seraá necesarios ins
 
 ## DBeaver
 
+<div align="center">
+<img src="https://miro.medium.com/max/1400/1*69ktAAlWQSJL2F-Yi8l4aQ.png" width="500">
+<div>
+
