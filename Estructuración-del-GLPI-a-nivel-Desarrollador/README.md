@@ -13,15 +13,26 @@ En esta parte de la introducción compartire que programas seraá necesarios ins
 <img src="https://www.redeszone.net/app/uploads-redeszone.net/2021/05/mobaxterm_destacada-1200x675.jpg" width="500">
 </div>
 
+### Enlace de descarga:
+> https://mobaxterm.mobatek.net/download.html
+
+
 ## MySQL WorckBench
 
 <div align="center">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcUYI3gIcK6QzYJeQyPoUHsSPma0dYF01Y2Q&s" width="500">
 </div>
 
+### Enlace de descarga:
+> https://dev.mysql.com/downloads/workbench/
+
+
 ## DBeaver
 
 <div align="center">
 <img src="https://miro.medium.com/max/1400/1*69ktAAlWQSJL2F-Yi8l4aQ.png" width="500">
 <div>
+
+### Enlace de descarga:
+> https://dbeaver.io/download/
 
