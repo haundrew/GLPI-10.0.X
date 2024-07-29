@@ -9,6 +9,10 @@ En esta parte de la introducción compartire que programas seraá necesarios ins
 
 ## MobaXterm
 
+<div align="center">
+<img src="https://www.redeszone.net/app/uploads-redeszone.net/2021/05/mobaxterm_destacada-1200x675.jpg" width="500">
+</div>
+
 ## MySQL WorckBench
 
 ## DBeaver
